@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["react-app", "react-app/jest", "airbnb", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "comma-dangle": 0,
+    "react/react-in-jsx-scope": 0, // No longer need to import react in each file (global scoped)
+    "react/no-array-index-key": 0
+  }
+}
